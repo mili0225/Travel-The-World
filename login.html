@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration and Login Forms</title>
+    <style>
+        
+        body {
+            background-image: url('https://i.pinimg.com/736x/6a/d9/1c/6ad91c3c21a5e5616dbbf2310f082cda.jpg');
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: rgb(0, 145, 255);
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 700px; 
+        }
+        .form-container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 12px; 
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); 
+            width: 100%;
+            max-width: 600px; 
+            margin: 20px 0; 
+            display: none; 
+            box-sizing: border-box;
+        }
+        .form-container.show {
+            display: block; 
+        }
+        .form-container h2 {
+            margin-top: 0;
+            font-size: 26px; 
+            margin-bottom: 20px; 
+        }
+        .form-container label {
+            font-size: 18px; 
+            margin-bottom: 8px; 
+            display: block;
+        }
+        .form-container input[type="text"],
+        .form-container input[type="number"],
+        .form-container input[type="password"] {
+            width: calc(100% - 24px); 
+            padding: 14px; 
+            border: 1px solid #ddd;
+            border-radius: 8px; 
+            box-sizing: border-box;
+            font-size: 18px; 
+            margin-bottom: 20px; 
+        }
+        .form-container input[type="submit"] {
+            background-size: cover; 
+            color: #fff;
+            border: none;
+            padding: 14px 24px; 
+            border-radius: 8px; 
+            cursor: pointer;
+            font-size: 18px; 
+            display: block;
+            width: 100%; 
+            margin-top: 10px; 
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5); 
+            background-blend-mode: overlay;
+        }
+        .form-container input[type="submit"]:hover {
+            background-color: rgba(0, 0, 0, 0.7); 
+        }
+        .toggle-link {
+            cursor: pointer;
+            color: #007bff;
+            text-decoration: underline;
+            margin: 15px 0; 
+            padding: 10px 0; 
+            display: inline-block; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="registration-form" class="form-container show">
+            <h2>Registration Form</h2>
+            <form action="register.php" method="post" onsubmit="handleRegistrationSubmit(event)">
+                <label for="name">Enter name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="city">Enter city:</label>
+                <input type="text" id="city" name="city" required>
+                
+                <label for="mobile">Mobile:</label>
+                <input type="number" id="mobile" name="mobile" required>
+                
+                <input type="submit" value="Submit">
+            </form>
+            <div>
+                <span class="toggle-link" onclick="showLoginForm()">Already registered? Sign in</span>
+            </div>
+        </div>
+        <div id="login-form" class="form-container">
+            <h2>Login Form</h2>
+            <form action="login.php" method="post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <input type="submit" value="Login">
+            </form>
+            <div>
+                <span class="toggle-link" onclick="showRegistrationForm()">New here? Register</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function handleRegistrationSubmit(event) {
+            event.preventDefault(); 
+            document.getElementById('registration-form').classList.remove('show');
+            document.getElementById('login-form').classList.add('show');
+        }
+
+        function showLoginForm() {
+            document.getElementById('registration-form').classList.remove('show');
+            document.getElementById('login-form').classList.add('show');
+        }
+
+        function showRegistrationForm() {
+            document.getElementById('login-form').classList.remove('show');
+            document.getElementById('registration-form').classList.add('show');
+        }
+    </script>
+</body>
+</html>
