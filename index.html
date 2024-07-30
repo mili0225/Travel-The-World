@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
-            background-image: url(https://media.istockphoto.com/id/1018355016/photo/commercial-airplane-flying-above-clouds.webp?b=1&s=170667a&w=0&k=20&c=2Eo59SsNlspj-rMl4FA-te4d254hiRO3-pGRwZBXw64=);
+            background-image: url(https://media.istockphoto.com/id/1018355016/photo/commercial-airplane-flying-above-clouds.webp?b=1&s=170667a&w=0&k=20&c=2Eo59SsNlspj-rMl4FA-te4d254hiRO3-pGRwZBXw64=); 
             font-family: Arial, sans-serif;
             background-size: cover;
             margin: 0;
@@ -20,27 +20,15 @@
 
         .heading {
             background-color: black;
-            color: red;
+            color: white;
             text-align: center;
             padding: 20px;
             margin-bottom: 20px;
         }
 
-
-        .footer {
-            background-color: #007bff;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-
         .carousel {
             margin: 20px 0;
             bottom: 20 px;
-
         }
 
         .carousel-item img {
@@ -56,6 +44,7 @@
             background-color: #007bff;
             border-color: #007bff;
         }
+
         .card {
             margin-bottom: 20px;
         }
@@ -68,56 +57,40 @@
         .container {
             margin-top: 30px;
         }
+
         .card {
-            background-color: #fff;
+            background-color: #0a7efa;
             border: 1px solid #ddd;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             width: 300px;
-            margin: 10px;
-            overflow: hidden;
         }
 
-        .card img {
+        .card h2 {
+            margin: 0 0 10px;
+        }
+
+        .card p {
+            margin: 0;
+        }
+
+        .footer {
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
             width: 100%;
-            height: 180px;
-            object-fit: cover;
+            bottom: 0;
         }
 
-        .card-body {
+        .credit {
+            text-align: center;
             padding: 15px;
-        }
-
-        .card-title {
-            font-size: 1.25rem;
             margin-bottom: 10px;
+            font-size: 1.25rem; 
+            font-weight: bold; 
         }
-
-        .card-text {
-            font-size: 0.875rem;
-            margin-bottom: 15px;
-        }
-
-
-.card {
-    background-color: #0a7efa; 
-    border: 1px solid #ddd; 
-    border-radius: 8px; 
-    padding: 20px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    width: 300px; 
-}
-
-.card h2 {
-    margin: 0 0 10px; 
-}
-
-.card p {
-    margin: 0; 
-}
-
-
-
     </style>
 </head>
 <body>
@@ -129,7 +102,6 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-
                 <li class="nav-item">
                     <a class="nav-link" href="./about.html">About</a>
                 </li>
@@ -141,7 +113,6 @@
                 </li>
             </ul>
         </div>
-        
     </nav>
 
     <!-- Heading -->
@@ -161,12 +132,10 @@
                 <img src="https://plus.unsplash.com/premium_photo-1664300792059-863ccfe55932?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9yZXN0fGVufDB8fDB8fHww" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="https://images.unsplash.com/photo-1528127269322-539801943592?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dG91cnxlbnwwfHwwfHx8MA%3D%3D
-                " class="d-block w-100" alt="...">
+                <img src="https://images.unsplash.com/photo-1528127269322-539801943592?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dG91cnxlbnwwfHwwfHx8MA%3D%3D" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="https://media.istockphoto.com/id/1287303049/photo/cape-verde-landscape-photo-collage-montage-santiago-sal-boavista-sao-vicente.webp?b=1&s=170667a&w=0&k=20&c=XS5DQ4zuDYOXqxSc4C-E-gXdPFtE2wTz0nFtsW1eIh4=
-                " class="d-block w-100" alt="...">
+                <img src="https://media.istockphoto.com/id/1287303049/photo/cape-verde-landscape-photo-collage-montage-santiago-sal-boavista-sao-vicente.webp?b=1&s=170667a&w=0&k=20&c=XS5DQ4zuDYOXqxSc4C-E-gXdPFtE2wTz0nFtsW1eIh4=" class="d-block w-100" alt="...">
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -180,21 +149,15 @@
     </div>
 
     <!-- Card Component -->
-   
     <div class="container">
         <div class="row">
             <!-- Card 1 -->
             <div class="col-md-4">
                 <div class="card">
-                    <img src="https://images.unsplash.com/photo-1508804052814-cd3ba865a116?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-                    " class="card-img-top" alt="Card image 1">
+                    <img src="https://images.unsplash.com/photo-1508804052814-cd3ba865a116?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Card image 1">
                     <div class="card-body">
                         <h5 class="card-title">Forest</h5>
-                        <p class="card-text">A forest is an ecosystem characterized by a dense community of trees. Hundreds of definitions of forest are used throughout the world, incorporating factors such as tree density, tree height, land use.
-
-
-
-                        </p>
+                        <p class="card-text">A forest is an ecosystem characterized by a dense community of trees. Hundreds of definitions of forest are used throughout the world, incorporating factors such as tree density, tree height, land use.</p>
                         <a href="#" class="btn btn-primary"></a>
                     </div>
                 </div>
@@ -202,13 +165,10 @@
             <!-- Card 2 -->
             <div class="col-md-4">
                 <div class="card">
-                    <img src="https://plus.unsplash.com/premium_photo-1694475526398-41633c1675cf?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-                    " class="card-img-top" alt="Card image 2">
+                    <img src="https://plus.unsplash.com/premium_photo-1694475526398-41633c1675cf?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Card image 2">
                     <div class="card-body">
                         <h5 class="card-title">Waterfall</h5>
-                        <p class="card-text">Waterfalls are created when rushing waters of rivers erode all soil and lightweight rocks until there are only heavy rocks present. The water falls over these rocks, or a waterfall can be created when gravity.
-
-                        </p>
+                        <p class="card-text">Waterfalls are created when rushing waters of rivers erode all soil and lightweight rocks until there are only heavy rocks present. The water falls over these rocks, or a waterfall can be created when gravity.</p>
                         <a href="#" class="btn btn-primary"></a>
                     </div>
                 </div>
@@ -216,50 +176,29 @@
             <!-- Card 3 -->
             <div class="col-md-4">
                 <div class="card">
-                    <img src="https://images.unsplash.com/photo-1567604539011-ce1f37c5d657?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-                    " class="card-img-top" alt="Card image 3">
+                    <img src="https://images.unsplash.com/photo-1567604539011-ce1f37c5d657?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Card image 3">
                     <div class="card-body">
-                        <h5 class="card-title">Sunset</h5>
-                        <p class="card-text">Sunset (or sundown) is the disappearance of the Sun below the horizon of the Earth (or any other astronomical object in the Solar System) due to its rotation. As viewed from everywhere on Earth.
-
-                        </p>
+                        <h5 class="card-title">Desert</h5>
+                        <p class="card-text">Deserts are characterized by their arid conditions, limited vegetation, and extreme temperature variations. They receive very little rainfall, and their landscapes often include sand dunes, rocky plateaus, and sparse vegetation.</p>
                         <a href="#" class="btn btn-primary"></a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-            <br>
-            <!-- YouTube Video  -->
-            <div class="container">
-                <h2 class="text-center my-4"> Our Travel Videos</h2>
-                <div class="row">
-                    <!-- Video 1 -->
-                    <div class="col-md-6 mb-4">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/_e8BFrAPedM?si=yQo0_X9jgIfLQ2-V" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    </div>
-                    <!-- Video 2 -->
-                    <div class="col-md-6 mb-4">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/XYwP-QndGG0?si=IPYwwez3h7bCmk0v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-                </div>
-            </div>
- 
-            
-            <br><br><br><br>
-
-    
-
+<br>
+    <!-- Credit -->
+    <div class="credit">
+        <p>Designed by Mili Kumbala</p>
+    </div>
+<br><br>
     <!-- Footer -->
     <div class="footer">
         <p>&copy; 2024 Travel The World. All rights reserved.</p>
     </div>
 
-    <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    
-        
-    
 </body>
 </html>
